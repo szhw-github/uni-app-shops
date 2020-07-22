@@ -220,9 +220,9 @@
 						position absolute
 						right 66px
 						bottom 18px
-						height 24px
-						line-height 24px
-						font-size 24px
+						height 30px
+						line-height 30px
+						font-size 30px
 						color rgb(0,160,220)
 						.count
 						  font-size 10px
