@@ -32,8 +32,8 @@
 	.btn-area
 		display flex
 		.wrapper
-			line-height 40px
+			line-height 40rpx
 			margin auto
-			font-size 14px
+			font-size 14rpx
 			color rgb(77,85,93)		
 </style>

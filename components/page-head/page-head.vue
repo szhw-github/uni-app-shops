@@ -71,48 +71,48 @@
       position fixed
       overflow hidden
       width 100%
-      height 106px
+      height 106rpx
       z-index -1
-      filter blur(10px)
+      filter blur(10rpx)
     .backgroud-img
       width 100%
     .content-wrapper
       display flex
       position relative
-      padding 24px 12px 18px 24px
+      padding 24rpx 12rpx 18rpx 24rpx
       .avatar
-        width 64px
-        height 64px
-        border-radius 2px
+        width 64rpx
+        height 64rpx
+        border-radius 2rpx
       .content
-        font-size 12px
-        margin 2px 0 2px 12px
+        font-size 12rpx
+        margin 2px 0 2rpx 12rpx
         .title
           display flex
-          line-height 18px
-          margin-bottom 8px
+          line-height 18rpx
+          margin-bottom 8rpx
           .brand
-            width 30px
-            height 18px
-            background-size 30px 18px
+            width 30rpx
+            height 18rpx
+            background-size 30rpx 18rpx
             bg-icon("brand")
-            margin-right 6px
+            margin-right 6rpx
           .name
-            font-size 16px
+            font-size 16rpx
             font-weight bold
         .description
-          height 12px
-          font-size 12px
+          height 12rpx
+          font-size 12rpx
           font-weight 200
-          margin-bottom 10px
+          margin-bottom 10rpx
         .supports
           display flex
-          line-height 12px
+          line-height 12rpx
           .icon
-            width 12px
-            height 12px
-            background-size 12px 12px
-            margin-right 4px
+            width 12rpx
+            height 12rpx
+            background-size 12rpx 12rpx
+            margin-right 4rpx
             background-repeat no-repeat
             &.decrease
               bg-icon("decrease_1")
@@ -125,44 +125,44 @@
             &.special
               bg-icon('special_1')
           .text
-            height 12px
-            font-size 10px
+            height 12rpx
+            font-size 10rpx
             font-weight 200
             margin-bottom 0
       .supports-count
         position absolute
         display flex
-        right 12px
-        bottom 13px
-        line-height 24px
-        padding 0 8px
-        border-radius 12px
+        right 12rpx
+        bottom 13rpx
+        line-height 24rpx
+        padding 0 8rpx
+        border-radius 12rpx
         background-color rgba(0,0,0,0.2)
-        font-size 10px
+        font-size 10rpx
         .count
           font-width 200
-          margin-right 2px
+          margin-right 2rpx
         .icon-keyboard_arrow_right
-          line-height 24px
+          line-height 24rpx
     .bulletin-wrapper
       display flex
       align-items center
-      padding 0 10px
-      height 28px
+      padding 0 10rpx
+      height 28rpx
       min-width : 0
       background-color red
-      font-size 10px
+      font-size 10rpx
       background rgba(7,17,27,0.2)
       .icon
         flex 0 0 auto
-        width 22px
-        height 12px
+        width 22rpx
+        height 12rpx
         align-items center
-        background-size 22px 12px
+        background-size 22rpx 12rpx
         bg-icon("bulletin")
         background-repeat no-repeat
       .bulletin
-        margin 0 4px
+        margin 0 4rpx
         font-weight 200
         padding 0
         ellipsis()

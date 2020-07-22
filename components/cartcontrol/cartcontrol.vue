@@ -1,8 +1,8 @@
 <template>
   <div class="shopcart-detail">
     <div class="head border-bottom">
-      <span class="text">购物车</span>
-      <span class="clear" @click="hangdleClear">清空</span>
+			<div class="text">购物车</div>
+			<div class="clear" @click="hangdleClear">清空</div>
     </div>
     <scroll-view scroll-y="true" class="wrapper scroll-Y">
       <div class="foods">
@@ -73,60 +73,61 @@
   border-bottom()
   .shopcart-detail
     position absolute
-    bottom 48px
+    bottom 48rpx
     left 0
     right 0
     z-index 0
-    max-height 305.5px
+    max-height 305.5rpx
     background #fff
-    .head
-      display flex
-      line-height 40px
-      padding-left 18px
-      padding-right 18px
-      background #f3f5f7
-      .text
-        flex 1
-        text-align left
-        color rgb(7,17,27)
-      .clear
-        flex 1
-        text-align right
-        color rgb(0,160,200)
-    .wrapper
-      overflow hidden
-      max-height 265.5px
-      .foods
-        padding 0 18px
-        color grey
-        .item
-          display flex
-          height 58px
-          align-items center
-          .item-img
-            width 40px
-            height 40px
-            margin-right 4px
-            object-fit cover
-          .name
-            flex 1
-            text-align left
-            font-size 14px
-            color rgb(7,17,27)
-            margin-right 18px
-          .price
-            color red
-            font-size 14px
-            margin-right 12px
+	  .head
+				display flex
+				line-height 40rpx
+				padding-left 18rpx
+				padding-right 18rpx
+				background #f3f5f7
+				font-size 18rpx
+				.text
+					flex 1
+					text-align left
+					color rgb(7,17,27)
+				.clear
+					flex 1
+					text-align right
+					color rgb(0,160,200)
+		.wrapper
+		  overflow hidden
+		  max-height 265.5rpx
+		  .foods
+		    padding 0 18rpx
+		    color grey
+		    .item
+		      display flex
+		      height 58rpx
+		      align-items center
+		      .item-img
+		        width 40rpx
+		        height 40rpx
+		        margin-right 4rpx
+		        object-fit cover
+		      .name
+		        flex 1
+		        text-align left
+		        font-size 14rpx
+		        color rgb(7,17,27)
+		        margin-right 18rpx
+		      .price
+		        color red
+		        font-size 14rpx
+		        margin-right 12rpx
 						font-weight 700
-          
+		      
 					.add
 						color rgb(0,160,220)
 					.remove
 						color rgb(0,160,220)
 					.count
-						font-size 10px
+						font-size 10rpx
 						color rgb(147,153,159)
-						width 24px
+						width 24rpx
 						text-align center
 </style>

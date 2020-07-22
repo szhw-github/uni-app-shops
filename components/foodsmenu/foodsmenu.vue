@@ -55,44 +55,44 @@
 </script>
 
 <style lang="stylus" scoped>
-  @import "~styles/variable.styl"
-  @import "~styles/mixins.styl"
+  @import "../../styles/variable.styl"
+  @import "../../styles/mixins.styl"
   border-bottom()
   .scroll-Y
     overflow hidden
     position absolute
-    top 174px
+    top 174rpx
     left 0
-    bottom 46px
+    bottom 46rpx
     background $grey_bg
     .menu-item
       display table
-      height 54px
-      padding 0 12px
+      height 54rpx
+      padding 0 12rpx
       &.current
         background #fff
         .text
-          font-size 12px
+          font-size 12rpx
           color rgb(7,17,27)
-          line-height 14px
+          line-height 14rpx
           font-weight 500
       .text
         display table-cell
         vertical-align middle
-        height 54px
-        line-height 14px
-        width 56px
+        height 54rpx
+        line-height 14rpx
+        width 56rpx
         padding 0 auto
-        font-size 12px
+        font-size 12rpx
         font-weight 200
         color rgb(77,85,93)
       .icon
         display inline-block
         vertical-align middle
-        width 12px
-        height 12px
-        margin-right 4px
-        background-size 12px 12px
+        width 12rpx
+        height 12rpx
+        margin-right 4rpx
+        background-size 12rpx 12rpx
         background-repeat no-repeat
         &.decrease
           bg-icon("decrease_3")

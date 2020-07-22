@@ -47,8 +47,8 @@
 </script>
 
 <style lang="stylus" scoped>
-  @import "~styles/variable.styl"
-  @import "~styles/mixins.styl"
+  @import "../../styles/variable.styl"
+  @import "../../styles/mixins.styl"
   border-bottom()
   .food-detail
     position fixed
@@ -62,45 +62,45 @@
       color #fff
       .food-img
         width 100%
-        height 375px
+        height 375rpx
         object-fit cover
       .icon
         position absolute
-        top 10px
-        left 10px
+        top 10rpx
+        left 10rpx
     .content
       .info
-        padding 18px
+        padding 18rpx
         position relative
         background #fff
         .name
-          font-size 14px
+          font-size 14rpx
           font-weight 700
           color rgb(7,17,27)
-          line-height 14px
-          margin-bottom 8px
+          line-height 14rpx
+          margin-bottom 8rpx
         .detail
-          font-size 10px
+          font-size 10rpx
           color $font_grey
-          line-height 10px
-          margin-bottom 18px
+          line-height 10rpx
+          margin-bottom 18rpx
         .price
-          font-size 14px
+          font-size 14rpx
           font-weight 700
           color rgb(240,20,20)
         .old-price
-          font-size 10px
+          font-size 10rpx
           font-weight 700
           color rgb(147,153,159)
         .add
           position absolute
-          right 18px
-          bottom 18px
-          width 74px
-          height 24px
-          line-height 24px
-          font-size 10px
-          border-radius 12px
+          right 18rpx
+          bottom 18rpx
+          width 74rpx
+          height 24rpx
+          line-height 24rpx
+          font-size 10rpx
+          border-radius 12rpx
           text-align center
           color #fff
           background $color_blue

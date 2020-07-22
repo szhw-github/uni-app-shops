@@ -1,5 +1,5 @@
 <template>
-	<scroll-view scroll-y="true" class="foods scroll-Y" @scroll="scroll"
+	<scroll-view scroll-y="true" scroll-x="false" class="foods scroll-Y" @scroll="scroll"
 	:scroll-into-view ="scrollInto"
 	@touchstart.prevent = "setShowCartcontrol('touch')"
 	>
@@ -27,7 +27,7 @@
 										<div class="description" v-show="food.description!==''">{{food.description}}</div>
 										<div class="sales">月售{{food.sellCount}}份 好评率{{food.rating}}% </div>
 										<div class="price">
-											<span class="actual-price" :style="{fontSize: food.oldPrice ? '14px' : '10px'}">¥{{food.price}}</span>
+											<span class="actual-price" :style="{fontSize: food.oldPrice ? '14rpx' : '10rpx'}">¥{{food.price}}</span>
 											<span class="old-price" v-show="food.oldPrice">¥{{food.oldPrice}}</span>
 										</div>
 									</div>
@@ -144,89 +144,88 @@
 </script>
 
 <style lang="stylus" scoped>
-  @import "~styles/variable.styl"
+  @import "../../styles/variable.styl"
 	.border-top
 	  &:before
 	    border-color rgba(7,17,27,0.1)
-	    border-width 2px
+	    border-width 2rpx
 	.border-left
 	  &:before
 	    border-color #d9dde1
-	    border-width 5px
+	    border-width 5rpx
 	.scroll-Y
 		overflow hidden
 		position absolute
-		top 174px
-		left 80px
-		bottom 46px
+		top 174rpx
+		left 80rpx
+		bottom 46rpx
 		.content-wrapper
-			padding-right 10px
+			padding-right 10rpx
 			.head
-				padding-left 14px
-				font-size 12px
+				padding-left 14rpx
+				font-size 12rpx
 				color rgb(147,153,159)
-				line-height 24px
-				font-weight normal/700
+				line-height 24rpx
+				font-weight 700
 				background $grey_bg
 			.food-wrapper
-				padding 0 18px
 				.food
-					padding 18px 0
 					position relative
 					.link-to
 						display flex
 						.img-wrapper
 							overflow hidden
 							flex 0 0 auto
-							width 60px
-							height 60px
+							width 60rpx
+							height 60rpx
 							.food-img
 								height 100%
 								width 100%
 						.content
 							flex 1
 							margin-left 10px
-							margin-top 2px
+							margin-top 2rpx
 							.title
-								font-size 14px
+								font-size 14rpx
 								color rgb(7,17,27)
-								line-height 14px
-								margin-top 2px
-								margin-bottom 8px
+								line-height 14rpx
+								margin-top 2rpx
+								margin-bottom 8rpx
 							.description
-								font-size 10px
+								font-size 10rpx
 								color rgb(147,153,159)
-								line-height 12px
-								margin-bottom 8px
+								line-height 12rpx
+								margin-bottom 8rpx
 							.sales
-								font-size 10px
+								font-size 10rpx
 								color rgb(147,153,159)
-								line-height 10px
-								margin-bottom 8px
+								line-height 10rpx
+								margin-bottom 8rpx
 							.actual-price
-								font-size 10px
+								font-size 10rpx
 								color red
 								font-weight 700
-								line-height 24px
+								line-height 24rpx
 							.old-price
-								font-size 10px
+								font-size 10rpx
 								color rgb(147,153,159)
 								font-weight 700
-								line-height 24px
+								line-height 24rpx
 								text-decoration line-through
 					.icons
 						display flex
+						overflow hidden
 						flex 0 0 auto
 						position absolute
-						right 66px
-						bottom 18px
-						height 24px
-						line-height 24px
-						font-size 24px
+						right 100rpx
+						bottom 18rpx
+						height 24rpx
+						line-height 24rpx
+						font-size 24rpx
 						color rgb(0,160,220)
 						.count
-						  font-size 10px
+						  font-size 10rpx
 						  color rgb(147,153,159)
-						  width 24px
+						  width 24rpx
 						  text-align center
 </style>

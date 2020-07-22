@@ -59,16 +59,16 @@
     .count
       z-index 1
       position fixed
-      left 44px
-      bottom 42px
-      width 24px
-      height 16px
-      border-radius 12px
+      left 44rpx
+      bottom 42rpx
+      width 24rpx
+      height 16rpx
+      border-radius 12rpx
       text-align center
       color #fff
-      font-size 9px
+      font-size 9rpx
       font-weight 700
-      line-height 16px
+      line-height 16rpx
       background red
     .shopcart
       display flex
@@ -76,62 +76,62 @@
       bottom 0
       left 0
       right 0
-      height 48px
-      line-height 48px
+      height 48rpx
+      line-height 48rpx
       text-align center
       color rgba(255,255,255,0.4)
       background #141d27
       .circle
         position absolute
-        left 12px
-        bottom 2px
-        height 56px
-        width 56px
+        left 12rpx
+        bottom 2rpx
+        height 56rpx
+        width 56rpx
         background #141d27
         border-radius 50%
       .icon-wrapper
         position absolute
-        left 18px
-        bottom 8px
-        height 44px
-        width 44px
+        left 18rpx
+        bottom 8rpx
+        height 44rpx
+        width 44rpx
         background rgba(255,255,255,0.2)
         border-radius 50%
-        line-height 48px
+        line-height 48rpx
       .icon_wrapper_actived
         background rgb(0, 160, 200)
       .icon
-        font-size 24px
+        font-size 24rpx
         color rgba(255,255,255,0.4)
       .icon_actived
         color #fff
       .total-price
-        font-size 16px
+        font-size 16rpx
         font-weight 700
-        margin-left 80px
-        margin-right 12px
+        margin-left 80rpx
+        margin-right 12rpx
       .total-price-active
         color #fff
       .text
         text-align left
-        font-size 16px
+        font-size 16rpx
         font-weight 200
-        padding-left 12px
-        padding-right 12px
+        padding-left 12rpx
+        padding-right 12rpx
       .buttom
         position absolute
         right 0
         bottom 0
-        height 48px
-        font-size 12px
+        height 48rpx
+        font-size 12rpx
         font-weight 700
-        width 105px
-        padding-left 8px
-        padding-right 8px
+        width 105rpx
+        padding-left 8rpx
+        padding-right 8rpx
         background rgba(255,255,255,0.2)
       .buttom_actived
         background red
         color #fff
-        font-size 15px
+        font-size 15rpx
 
 </style>

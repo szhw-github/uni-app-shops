@@ -1,17 +1,17 @@
 <template>
 	<div>
 		<div class="star-wrapper"
-		:style="{width: 2*(starClass.length)*size + 'px'}"
+		:style="{width: 2*(starClass.length)*size + 'rpx'}"
 		v-if="starClass.length"
 		>
 			<div class="star"
 			v-for="(item,index) in starClass"
 			:style="{
-				width: size + 'px',
-				height: size + 'px',
-				marginLeft: size * 0.5 + 'px',
-				marginRight: size * 0.5 + 'px',
-				backgroundSize: [size + 'px', size + 'px']
+				width: size + 'rpx',
+				height: size + 'rpx',
+				marginLeft: size * 0.5 + 'rpx',
+				marginRight: size * 0.5 + 'rpx',
+				backgroundSize: [size + 'rpx', size + 'rpx']
 			}"
 			:class="['star'+size,item]"
 			:key="index"
