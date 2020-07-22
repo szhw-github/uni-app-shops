@@ -1,7 +1,7 @@
 <template>
 	<div class="btn-area border-bottom">
 		<div class="wrapper ">
-			<div class="btn" @click ="handleSwitchTo('order')">点餐</div>
+			<div class="btn" @click ="handleSwitchTo('index')">点餐</div>
 		</div>
 		<div class="wrapper">
 			<div class="btn" @click = "handleSwitchTo('ratings')">评论</div>
@@ -18,7 +18,7 @@
       name: "tag",
 			methods: {
 				handleSwitchTo (path) {
-					uni.navigateTo({
+					uni.redirectTo({
 					    url: `/pages/${path}/${path}`
 					})
 				}
