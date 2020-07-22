@@ -114,7 +114,7 @@
         color #fff
       .text
         text-align left
-        font-size 16px
+        font-size 10px
         font-weight 200
         padding-left 12px
         padding-right 12px
