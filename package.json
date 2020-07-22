@@ -1,0 +1,24 @@
+{
+  "name": "uni-app-shops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "better-scroll": "^2.0.0-beta.10",
+    "vue-router": "^3.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szhw-github/uni-app-shops.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szhw-github/uni-app-shops/issues"
+  },
+  "homepage": "https://github.com/szhw-github/uni-app-shops#readme"
+}
