@@ -145,6 +145,7 @@
 
 <style lang="stylus" scoped>
   @import "../../styles/variable.styl"
+	@import "../../styles/mixins.styl"
 	.border-top
 	  &:before
 	    border-color rgba(7,17,27,0.1)
@@ -222,6 +223,11 @@
 						height 24rpx
 						line-height 24rpx
 						font-size 24rpx
+						right 66px
+						bottom 18px
+						height 30px
+						line-height 30px
+						font-size 30px
 						color rgb(0,160,220)
 						.count
 						  font-size 10rpx

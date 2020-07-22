@@ -115,6 +115,7 @@
       .text
         text-align left
         font-size 16rpx
+        font-size 10px
         font-weight 200
         padding-left 12rpx
         padding-right 12rpx
