@@ -17,7 +17,7 @@
           <div class="price">
             <span class="now">￥{{food.price}}</span><span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}</span>
           </div>
-					<div class="buy" @click="handleAddClick" v-show="!countList[i][j]">
+					<div class="buy" @click="handleAddClick" v-show="!countList[index.i][index.j]">
 						加入购物车
 					</div>
         </div>
