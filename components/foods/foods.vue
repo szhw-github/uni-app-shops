@@ -1,4 +1,6 @@
 <template>
+	<div>
+		
 	<scroll-view scroll-y="true" class="foods scroll-Y" @scroll="scroll"
 	:scroll-into-view ="scrollInto"
 	@touchstart.prevent = "setShowCartcontrol('touch')"
@@ -17,8 +19,7 @@
 									 v-for="(food,index_food) in item.foods"
 									 :key="index_food"
 							>
-								<navigator class="link-to"
-								:url="'/pages/food-detail/food-detail?item='+ encodeURIComponent(JSON.stringify({i:index_good,j:index_food}))">
+								<div class="link-to" @click="handleFoodClick(index_good,index_food)">
 									<div class="img-wrapper">
 										<img class="food-img" :src="food.image" mode="aspectFill">
 									</div>
@@ -31,7 +32,7 @@
 											<span class="old-price" v-show="food.oldPrice">¥{{food.oldPrice}}</span>
 										</div>
 									</div>
-								</navigator>
+								</div>
 								<div class="icons">
 									<div class="icon-wrapper"
 									v-show="countList[index_good][index_food]"
@@ -53,7 +54,10 @@
 				</ul>
 			</div>
 		</scroll-view>
-	
+		<div class="food-detail-wrapper" v-show="showFood">
+			<food-detail :food="foodClicked" :index="foodClickedIndex" @closeFoodDetail="closeFoodDetail"></food-detail>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -62,6 +66,7 @@
     name: 'foods',
     data () {
       return {
+				foodClicked: null,
         showFood: false,
 				heightList: [],
 				scrollInto: '',
@@ -133,6 +138,13 @@
 				  j: j,
 				  count:count
 				})
+			},
+			handleFoodClick(i,j) {
+				this.showFood =true
+				this.foodClicked = this.goods[i].foods[j]
+			},
+			closeFoodDetail() {
+				this.showFood = false
 			}
 		},
 		mounted() {
@@ -160,6 +172,7 @@
 		top 174px
 		left 80px
 		bottom 46px
+		z-index 0
 		.content-wrapper
 			padding-right 10px
 			.head

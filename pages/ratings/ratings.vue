@@ -32,7 +32,7 @@
 											:ratings="ratings"></ratingselect>
 				<div class="rating-wrapper">
 					<ul>
-						<li v-for="rating in ratings" class="rating-item">
+						<li v-for="(rating,index) in ratings" class="rating-item" :key="index">
 							<div class="content">
 								<h1 class="name">{{rating.username}}</h1>
 								<div class="star-wrapper">
@@ -42,10 +42,10 @@
 								<p class="text">{{rating.text}}</p>
 								<div class="recommend" v-show="rating.recommend && rating.recommend.length">
 									<span class="icon-thumb_up"></span>
-									<span class="item" v-for="item in rating.recommend">{{item}}</span>
+									<span class="item" v-for="(item,index) in rating.recommend" :key="index">{{item}}</span>
 								</div>
 								<div class="time">
-									{{rating.rateTime | formatDate}}
+									{{rating.rateTime}}
 								</div>
 							</div>
 						</li>
@@ -85,13 +85,8 @@
         } else {
           return type === this.selectType;
         }
-      },
-    filters: {
-      formatDate(time) {
-        let date = new Date(time);
-        return formatDate(date, 'yyyy-MM-dd hh:mm');
       }
-    }
+   
   }
 	}
 </script>

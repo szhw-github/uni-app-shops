@@ -55,7 +55,7 @@
 
 <style lang="stylus" scoped>
   .container
-    z-index 9
+    z-index 10
     .count
       z-index 1
       position fixed
