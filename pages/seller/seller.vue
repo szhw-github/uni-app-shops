@@ -40,7 +40,7 @@
 				<h3 class="title">公告与活动</h3>
 				<p class="bulletin">{{seller.bulletin}}</p>
 				<ul v-if="seller.supports" class="supports">
-					<li class="support-item border-top-1px" v-for="(item,index) in seller.supports">
+					<li class="support-item border-top-1px" v-for="(item,index) in seller.supports" :key="index">
 						<span class="icon" :class="classMap[seller.supports[index].type]"></span>
 						<span class="text">{{seller.supports[index].description}}</span>
 					</li>
@@ -50,7 +50,7 @@
 				<h3 class="title">商家实景</h3>
 				<div class="pics-list" v-if="seller.pics" ref="picListWrapper">
 					<ul ref="picList">
-						<li v-for="(item,index) in seller.pics" class="item">
+						<li v-for="(item,index) in seller.pics" class="item" :key="index">
 							<img :src="item" alt="" width="120" height="90">
 						</li>
 					</ul>
@@ -60,7 +60,7 @@
 				<h3 class="title">商家信息</h3>
 				<div class="infos" v-if="seller.infos">
 					<ul>
-						<li v-for="(item,index) in seller.infos">{{item}}</li>
+						<li v-for="(item,index) in seller.infos" :key="index">{{item}}</li>
 					</ul>
 				</div>
 			</div>

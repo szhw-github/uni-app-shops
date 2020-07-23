@@ -13,10 +13,6 @@
 		{
 			"path": "pages/ratings/ratings",
 			"style": {}
-		},
-		{
-			"path": "pages/food-detail/food-detail",
-			"style": {}
 		}
 	],
 	"globalStyle": {
