@@ -1,5 +1,6 @@
 # uni-app-shops
 ## 小程序点餐
+  使用混合开发框架uni-app和Vue进行开发的点餐小程序。
 ### 页面1 点餐
 <img src="https://github.com/szhw-github/uni-app-shops/raw/master/Images/1.png" width=200>
 ### 页面2 评论
