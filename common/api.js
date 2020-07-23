@@ -1,6 +1,6 @@
 
 // 配置项
-const host = 'http://192.168.199.161:5959'
+const host = 'http://localhost:5959'
 
 const api = {
   host,
